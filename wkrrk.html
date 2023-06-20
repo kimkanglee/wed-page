@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>C.Lit/작가 소개</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <style>
+    .nav-link:hover,
+    .nav-link.active {
+      color: #6F2526 !important;
+    }
+    .navbar-brand {
+      font-family: 'Lobster', cursive;
+      font-size: 32px;
+      color: #6F2526;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .navbar-nav {
+      margin-right: auto;
+    }
+    .navbar-nav .nav-link {
+      padding-right: 0.5rem;
+      padding-left: 0.5rem;
+      
+    }
+    header {
+      background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/writer-background.jpg);
+      background-size: cover;
+      background-position: center top;
+      background-attachment: fixed;
+    }
+    .writer-intro {
+      padding-top: 100px;
+      padding-bottom: 100px;
+      background-color: #F8F9FA;
+    }
+    .writer-intro h2 {
+      color: #6F2526;
+      font-family: 'Lobster', cursive;
+      font-size: 32px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .writer-card {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+      height: 100%; 
+      transition: transform 0.3s;
+    }
+    .writer-card img {
+      width: 100%;
+      height: 350px; 
+      object-fit: cover; 
+      border-radius: 5px;
+      margin-bottom: 15px;
+    }
+    .writer-card h6 {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .writer-card p {
+      font-size: 14px;
+      color: #555;
+    }
+    .writer-card:hover {
+    transform: scale(1.1);
+  }
+  .pagination {
+      justify-content: center;
+      margin-top: 30px;
+    }
+    .pagination .page-link {
+      color: #6F2526;
+    }
+    .pagination .page-item.active .page-link {
+      background-color: #6F2526;
+      border-color: #6F2526;
+    }
+  </style>
+</head>
+<body>
+ <!-- 네비게이션 -->
+<nav class="navbar navbar-expand-md bg-light navbar-light fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      C.Lit
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu"
+      aria-controls="nav-menu" aria-expanded="false" aria-label="메뉴">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav-menu">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">홈</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="ehtjthro.html">도서 소개</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="wkrrk.html">작가 소개</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="xhfhs.html">토론방</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="skfk.html">나라별 소개</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="page1.html"><i class="bi bi-list"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="page2.html"><i class="bi bi-person"></i></a>
+        </li>
+      </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 작가 소개 -->
+  <section id="writer-introduction" class="writer-intro">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="writer-card">
+            <img src="img/다운로드 (1).jpg" alt="Writer Profile 1" class="writer-image">
+            <h6>요한 볼프강 폰 괴테</h6>
+            <p>독일의 문학가이자 연극감독, 철학자이다. 한때는 작센바이마르 공국의 재상이었다. 근현대 독일의 가장 위대한 문인이자, 같은 문인들에게는 셰익스피어나 세르반테스에 버금가는 문학의 신화로 여겨진다</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="writer-card">
+            <img src="img/다운로드.jpg" alt="Writer Profile 2" class="writer-image">
+            <h6>프란츠 카프카</h6>
+            <p>오스트리아-헝가리 제국령이었던 지금의 체코에서 태어나 독일어를 쓴 유대인 소설가. 예술적 감각이 시대를 앞서간 천재 중의 천재로 평가된다. 독어권의 대문호라고 볼 수 있다.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="writer-card">
+            <img src="img/LJiqm8gJDMAIRwnPUULFTm0mdlFrBV62HREpkkjGnOjxtXUiw4ksd_JHUdilckjrfkUtAPRrWKfZ9-VYRIvW5UODKZFebqIqsq6xXJ8q29UEL-3A-WnXC4e8-nZTMVTiqHJ8h5ZNOIKWM_lsAtESeg.webp" alt="Writer Profile 3" class="writer-image">
+            <h6>헤르만 허세</h6>
+            <p>독일계 스위스인 문학가이자 예술가. 대표작으로 데미안, 싯다르타, 유리알 유희, 수레바퀴 아래서, 나르치스와 골드문트, 황야의 이리등이 있다.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-4">
+          <div class="writer-card">
+            <img src="img/5431140.jpg" alt="Writer Profile 4" class="writer-image">
+            <h6>조지 오웰</h6>
+            <p>영국 소설가. 러시아 혁명과 스탈린의 배신에 바탕을 둔 정치우화 《동물농장》으로 일약 명성을 얻게 되었으며, 지병인 결핵으로 입원 중 걸작 《1984년》을 완성했다.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="writer-card">
+            <img src="img/5920167.jpg" alt="Writer Profile 5" class="writer-image">
+            <h6>앙드레 지드</h6>
+            <p>문학의 여러 가능성을 실험한 프랑스 소설가.주요 저서에는 《좁은 문》등이 있으며 노벨 문학상을 수상했다.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="writer-card">
+            <img src="img/search.pstatic.jpg" alt="Writer Profile 6" class="writer-image">
+            <h6>윌리엄 셰익스피어</h6>
+            <p>영국이 낳은 세계 최고 극작가로서, 희·비극을 포함한 38편의 희곡과 여러 권의 시집 및 소네트집이 있다</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <ul class="pagination justify-content-center">
+      <li class="page-item disabled">
+        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">이전</a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#">다음</a>
+      </li>
+    </ul>
+  </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-vVVwAV4D8WR6XZPCOeJuRwcDHolO97DPCK2WW3wvlUZqOTuPjY4W7dOlz+bcHeNV" crossorigin="anonymous"></script>
+</body>
+</html>

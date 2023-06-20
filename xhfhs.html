@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>C.Lit/토론방</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <style>
+    .nav-link:hover,
+    .nav-link.active {
+      color: #6F2526 !important;
+    }
+    .navbar-brand {
+      font-family: 'Lobster', cursive;
+      font-size: 32px;
+      color: #6F2526;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .navbar-nav {
+      margin-right: auto;
+    }
+    .navbar-nav .nav-link {
+      padding-right: 0.5rem;
+      padding-left: 0.5rem;
+      
+    }
+    header {
+      background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/person-holds-a-book-over-a-stack-and-turns-the-page.jpg);
+      background-size: cover;
+      background-position: center top;
+      background-attachment: fixed;
+    }
+    .discussion-room {
+      padding-top: 100px;
+      padding-bottom: 100px;
+      background-color: #F8F9FA;
+    }
+    .discussion-card {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+    .discussion-card .card-header {
+      background-color: #6F2526;
+      color: #fff;
+      padding: 10px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+    .discussion-card .card-title {
+      font-size: 20px;
+      margin-bottom: 0;
+    }
+    .discussion-card .card-body {
+      padding: 10px;
+    }
+    .discussion-card .card-text {
+      margin-bottom: 0;
+    }
+    .discussion-card .card-footer {
+      background-color: #F8F9FA;
+      padding: 10px;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+    .discussion-card .card-footer small {
+      color: #555;
+    }
+    .post-input {
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+    .post-input textarea {
+      width: 100%;
+      min-height: 100px;
+      border: none;
+      resize: vertical;
+    }
+    .post-input button {
+      margin-top: 10px;
+    }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    margin: -10px; 
+  }
+
+  .col-md-6 {
+    flex: 0 0 50%; 
+    padding: 10px; 
+  }
+  .pagination {
+      justify-content: center;
+      margin-top: 30px;
+    }
+    .pagination .page-link {
+      color: #6F2526;
+    }
+    .pagination .page-item.active .page-link {
+      background-color: #6F2526;
+      border-color: #6F2526;
+    }
+  </style>
+</head>
+<body>
+  <!-- 네비게이션 -->
+<nav class="navbar navbar-expand-md bg-light navbar-light fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      C.Lit
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu"
+      aria-controls="nav-menu" aria-expanded="false" aria-label="메뉴">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav-menu">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">홈</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="ehtjthro.html">도서 소개</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="wkrrk.html">작가 소개</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="xhfhs.html">토론방</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="skfk.html">나라별 소개</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="page1.html"><i class="bi bi-list"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="page2.html"><i class="bi bi-person"></i></a>
+        </li>
+      </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="discussion-room" class="discussion-room">
+    <div class="container">
+      <h2>토론방</h2>
+      
+      <!-- 토론방 게시물 -->
+      <div class="post-input">
+        <textarea placeholder="토론 내용을 입력하세요..."></textarea>
+        <button type="button" class="btn btn-primary">게시하기</button>
+      </div>
+      
+      <div class="row">
+        <div class="col-md-6">
+          <div class="discussion-card">
+            <div class="card-header">
+              <h5 class="card-title">토론 주제 1</h5>
+            </div>
+            <div class="card-body">
+              <p class="card-text">.</p>
+            </div>
+            <div class="card-footer">
+              <small>작성자: UserABC (2023년 6월 18일)</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="discussion-card">
+            <div class="card-header">
+              <h5 class="card-title">토론 주제 2</h5>
+            </div>
+            <div class="card-body">
+              <p class="card-text">.</p>
+            </div>
+            <div class="card-footer">
+              <small>작성자: UserXYZ (2023년 6월 19일)</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="discussion-card">
+            <div class="card-header">
+              <h5 class="card-title">토론 주제 3</h5>
+            </div>
+            <div class="card-body">
+              <p class="card-text">.</p>
+            </div>
+            <div class="card-footer">
+              <small>작성자: UserXYZ (2023년 6월 19일)</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="discussion-card">
+            <div class="card-header">
+              <h5 class="card-title">토론 주제 4</h5>
+            </div>
+            <div class="card-body">
+              <p class="card-text">.</p>
+            </div>
+            <div class="card-footer">
+              <small>작성자: UserXYZ (2023년 6월 19일)</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="discussion-card">
+            <div class="card-header">
+              <h5 class="card-title">토론 주제 5</h5>
+            </div>
+            <div class="card-body">
+              <p class="card-text">.</p>
+            </div>
+            <div class="card-footer">
+              <small>작성자: UserXYZ (2023년 6월 19일)</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="discussion-card">
+            <div class="card-header">
+              <h5 class="card-title">토론 주제 6</h5>
+            </div>
+            <div class="card-body">
+              <p class="card-text">.</p>
+            </div>
+            <div class="card-footer">
+              <small>작성자: UserXYZ (2023년 6월 19일)</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <ul class="pagination justify-content-center">
+      <li class="page-item disabled">
+        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">이전</a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#">다음</a>
+      </li>
+    </ul>
+  </div>
+</section>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b8cFztpu6tC6FZoQ65KKwHl1IcSRvXHqVEW9xFqS72A+jwhXAGxxEAYA8gvg7fuW"
+    crossorigin="anonymous"></script>
+</body>
+</html>
